@@ -58,7 +58,7 @@
   margin-bottom: 32px;
   min-width: 0;
 }
-.text {
+.text___5SkC0 {
   position: relative;
   width: 100%;
   height: 303px;
@@ -66,17 +66,52 @@
   margin-bottom: 109px;
   min-width: 0;
 }
+.freeBox__xt5CP {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__gkgqH {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 824px;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.text__nexBv {
+  width: 100%;
+  height: 59px;
+  max-width: 100%;
+  color: #a3bd5c;
+  font-size: 40px;
+  margin-bottom: 30px;
+  min-width: 0;
+  flex-shrink: 0;
+}
 .img {
   position: relative;
-  object-fit: cover;
+  object-fit: contain;
   max-width: 100%;
-  height: 558px;
-  width: 413px;
+  height: 533px;
+  width: auto;
+  flex-shrink: 0;
   margin: 0px 208px 16px 204px;
 }
 .img > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img > :global(.__wab_img-spacer) > img {
-  object-fit: cover;
+  object-fit: contain;
 }

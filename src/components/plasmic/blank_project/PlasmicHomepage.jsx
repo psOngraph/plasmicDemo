@@ -81,12 +81,10 @@ function PlasmicHomepage__RenderFunc(props) {
               {"Welcome to your first page."}
             </h1>
             <div
-              data-plasmic-name={"text"}
-              data-plasmic-override={overrides.text}
               className={classNames(
                 projectcss.all,
                 projectcss.__wab_text,
-                sty.text
+                sty.text___5SkC0
               )}
             >
               <React.Fragment>
@@ -108,25 +106,40 @@ function PlasmicHomepage__RenderFunc(props) {
                 </React.Fragment>
               </React.Fragment>
             </div>
-            <p.PlasmicImg
-              data-plasmic-name={"img"}
-              data-plasmic-override={overrides.img}
-              alt={""}
-              className={classNames(sty.img)}
-              displayHeight={"558px"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={"413px"}
-              loading={"lazy"}
-              src={{
-                src: mobileImagepngMXg0TQsf1,
-                fullWidth: 439,
-                fullHeight: 602,
-                aspectRatio: undefined
-              }}
-            />
+            <div className={classNames(projectcss.all, sty.freeBox__xt5CP)}>
+              {true ? (
+                <div className={classNames(projectcss.all, sty.freeBox__gkgqH)}>
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__nexBv
+                    )}
+                  >
+                    {"Hello I am Demo of plasmic"}
+                  </div>
+                  <p.PlasmicImg
+                    data-plasmic-name={"img"}
+                    data-plasmic-override={overrides.img}
+                    alt={""}
+                    className={classNames(sty.img)}
+                    displayHeight={"533px"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"100%"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: mobileImagepngMXg0TQsf1,
+                      fullWidth: 439,
+                      fullHeight: 602,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </div>
+              ) : null}
+            </div>
           </section>
         </div>
       </div>
@@ -135,10 +148,9 @@ function PlasmicHomepage__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "section", "h1", "text", "img"],
-  section: ["section", "h1", "text", "img"],
+  root: ["root", "section", "h1", "img"],
+  section: ["section", "h1", "img"],
   h1: ["h1"],
-  text: ["text"],
   img: ["img"]
 };
 
@@ -176,7 +188,6 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     section: makeNodeComponent("section"),
     h1: makeNodeComponent("h1"),
-    text: makeNodeComponent("text"),
     img: makeNodeComponent("img"),
     // Metadata about props expected for PlasmicHomepage
     internalVariantProps: PlasmicHomepage__VariantProps,
